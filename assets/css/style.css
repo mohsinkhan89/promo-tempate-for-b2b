@@ -1399,6 +1399,9 @@ main {
 }
 
 @media (max-width: 900px) {
+  .footer-dots {
+    opacity: 0.3;
+  }
   .dot-products {
     top: -42px;
   }
@@ -1709,6 +1712,9 @@ main {
 }
 
 @media (max-width: 420px) {
+  .footer-dots {
+    opacity: 0.3;
+  }
   .site-header {
     padding-left: 14px;
     padding-right: 14px;
@@ -1735,9 +1741,12 @@ main {
   .hero h2 {
     font-size: 23px;
   }
+  .dot-products {
+    top: -55px;
+  }
 
   .hero-points {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .trust-bar,
