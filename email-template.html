@@ -3,109 +3,347 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ceek Branding - Email Template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ceek Branding Email Template</title>
+    <style>
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        display: block;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+
+      body {
+        background: #eeeeee;
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+      }
+
+      .container {
+        max-width: 700px;
+        width: 700px;
+      }
+
+      .stack,
+      .product-col,
+      .benefit-col {
+        vertical-align: top;
+      }
+
+      .btn {
+        background: #f1060d;
+        color: #ffffff !important;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 48px;
+        min-width: 190px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .btn-dark {
+        background: #050505;
+      }
+
+      .red {
+        color: #f1060d;
+      }
+
+      @media screen and (max-width: 720px) {
+        .container {
+          width: 100% !important;
+        }
+
+        .mobile-pad {
+          padding-left: 18px !important;
+          padding-right: 18px !important;
+        }
+
+        .stack {
+          display: block !important;
+          width: 100% !important;
+        }
+
+        .hero-title {
+          font-size: 42px !important;
+          line-height: 44px !important;
+        }
+
+        .section-title {
+          font-size: 34px !important;
+          line-height: 36px !important;
+        }
+
+        .hero-image,
+        .wide-image {
+          margin-top: 22px !important;
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .product-col {
+          display: block !important;
+          padding: 0 0 16px !important;
+          width: 100% !important;
+        }
+
+        .product-card {
+          width: 100% !important;
+        }
+
+        .benefit-col {
+          display: inline-block !important;
+          padding-bottom: 22px !important;
+          width: 49% !important;
+        }
+
+        .benefit-last {
+          display: block !important;
+          margin: 0 auto !important;
+          width: 52% !important;
+        }
+
+        .footer-stack {
+          display: block !important;
+          padding: 0 0 24px !important;
+          width: 100% !important;
+        }
+      }
+
+      @media screen and (max-width: 430px) {
+        .hero-title {
+          font-size: 34px !important;
+          line-height: 36px !important;
+        }
+
+        .section-title {
+          font-size: 30px !important;
+          line-height: 32px !important;
+        }
+
+        .logo {
+          width: 165px !important;
+        }
+
+        .btn {
+          box-sizing: border-box;
+          width: 100% !important;
+        }
+
+        .benefit-col,
+        .benefit-last {
+          display: block !important;
+          width: 100% !important;
+        }
+      }
+    </style>
   </head>
-  <body class="email-page">
-    <main class="email-shell">
-      <section class="email-template">
-        <header class="email-header">
-          <img src="assets/img/logo.png" alt="Ceek Branding" />
-          <a href="#email-products">Shop Gifts</a>
-        </header>
+  <body>
+    <center style="background:#eeeeee;width:100%;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#eeeeee;">
+        <tr>
+          <td align="center" style="padding:24px 12px;">
+            <table role="presentation" class="container" cellspacing="0" cellpadding="0" border="0" style="background:#ffffff;border-collapse:collapse;box-shadow:0 20px 60px rgba(0,0,0,0.18);">
+              <tr>
+                <td class="mobile-pad" style="background:#050505;border-bottom:1px solid #333333;padding:18px 28px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td align="left" style="vertical-align:middle;">
+                        <img class="logo" src="assets/img/logo.png" width="205" alt="Ceek Branding" />
+                      </td>
+                      <td align="right" style="vertical-align:middle;">
+                        <a href="#" style="background:#f1060d;color:#ffffff;display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:42px;padding:0 16px;text-decoration:none;text-transform:uppercase;">My Account</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
 
-        <section class="email-hero">
-          <div class="email-hero-copy">
-            <p class="eyebrow">New Collection</p>
-            <h1>Premium Branded Merchandise</h1>
-            <p>
-              Stylish, high-quality gifts designed to impress teams, clients,
-              and event guests.
-            </p>
-            <a class="btn btn-red" href="#email-products">Explore Gifts <span>&rarr;</span></a>
-          </div>
-          <div class="email-hero-img">
-            <img src="assets/img/banner/hero-section-img.png" alt="Ceek premium branded merchandise" />
-          </div>
-        </section>
+              <tr>
+                <td class="mobile-pad" style="background:#030303;padding:38px 28px 28px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="stack" width="42%" style="vertical-align:middle;">
+                        <p style="color:#f1060d;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:800;margin:0 0 10px;text-transform:uppercase;">New Collection</p>
+                        <h1 class="hero-title" style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:48px;font-weight:900;line-height:50px;margin:0;text-transform:uppercase;">Premium Branded Merchandise</h1>
+                        <h2 style="color:#f1060d;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:900;line-height:28px;margin:12px 0 0;text-transform:uppercase;">Built for Modern Brands</h2>
+                        <p style="color:#d8d8d8;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;margin:22px 0;">Stylish, high-quality merchandise designed to elevate your brand, impress your team, and leave a lasting impression.</p>
+                        <a class="btn" href="#">Explore Gifts &rarr;</a>
+                      </td>
+                      <td class="stack" width="58%" align="right" style="vertical-align:middle;">
+                        <img class="hero-image" src="assets/img/banner/hero-section-img.png" width="390" alt="Premium branded merchandise" style="max-width:500px;width:390px;" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
 
-        <section class="email-kit">
-          <img src="assets/img/banner/executive-welcome-img.png" alt="Executive welcome kit" />
-          <div>
-            <div class="number-badge">01</div>
-            <h2>Executive <span>Welcome Kits</span></h2>
-            <p>
-              Thoughtfully curated kits to welcome new hires and clients with
-              quality essentials they'll use every day.
-            </p>
-            <a class="btn btn-split" href="#email-products">Explore Kits <span>&rarr;</span></a>
-          </div>
-        </section>
+              <tr>
+                <td class="mobile-pad" style="padding:34px 28px;background:#ffffff;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="stack" width="52%" style="vertical-align:middle;">
+                        <img class="wide-image" src="assets/img/banner/executive-welcome-img.png" width="330" alt="Executive welcome kit" style="border-radius:8px;max-width:500px;width:330px;" />
+                      </td>
+                      <td class="stack" width="48%" style="padding-left:28px;vertical-align:middle;">
+                        <p style="color:#f1060d;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:900;margin:0 0 14px;">01</p>
+                        <h2 class="section-title" style="color:#111111;font-family:Arial,Helvetica,sans-serif;font-size:36px;font-weight:900;line-height:38px;margin:0;">Executive <span class="red">Welcome Kits</span></h2>
+                        <p style="color:#4d4d4d;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:23px;margin:18px 0 22px;">Thoughtfully curated kits to welcome new hires and clients with quality essentials they'll love.</p>
+                        <a class="btn btn-dark" href="#">Explore Kits &rarr;</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
 
-        <section class="email-event">
-          <div>
-            <div class="number-badge dark">02</div>
-            <h2>Event <span>Giveaways</span></h2>
-            <p>
-              High-impact branded merch that helps your brand stand out at
-              conferences, launches, and celebrations.
-            </p>
-          </div>
-          <img src="assets/img/banner/event-giveaway-img.png" alt="Event giveaway set" />
-        </section>
+              <tr>
+                <td class="mobile-pad" style="background:#030303;padding:36px 28px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="stack" width="34%" style="vertical-align:middle;">
+                        <p style="color:#f1060d;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:900;margin:0 0 14px;">02</p>
+                        <h2 class="section-title" style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:36px;font-weight:900;line-height:38px;margin:0;">Event <span class="red">Giveaways</span></h2>
+                        <p style="color:#d8d8d8;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:23px;margin:18px 0 22px;">High-impact branded merch that helps you stand out and leave a lasting impression.</p>
+                        <a class="btn" href="#">Explore Giveaways &rarr;</a>
+                      </td>
+                      <td class="stack" width="66%" align="right" style="vertical-align:middle;">
+                        <img class="wide-image" src="assets/img/banner/event-giveaway-img.png" width="430" alt="Event giveaway merchandise" style="max-width:500px;width:430px;" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
 
-        <section class="email-products" id="email-products">
-          <div class="section-heading">
-            <div class="number-badge centered">03</div>
-            <h2>Tech <span>Accessories</span></h2>
-            <p>Choose practical branded gifts that keep your name visible.</p>
-          </div>
-          <div class="email-product-grid">
-            <article>
-              <img src="assets/img/transperent-img/bottle-img.png" alt="Insulated tumbler" />
-              <h3>Insulated Tumbler</h3>
-              <p>Keeps drinks hot or cold on the go.</p>
-            </article>
-            <article>
-              <img src="assets/img/transperent-img/headset-img.png" alt="Wireless headphones" />
-              <h3>Wireless Headphones</h3>
-              <p>Premium sound with all-day comfort.</p>
-            </article>
-            <article>
-              <img src="assets/img/transperent-img/bag-img.png" alt="Tech backpack" />
-              <h3>Tech Backpack</h3>
-              <p>Smart storage for everyday essentials.</p>
-            </article>
-          </div>
-        </section>
+              <tr>
+                <td class="mobile-pad" style="background:#ffffff;padding:38px 28px 42px;">
+                  <p align="center" style="color:#f1060d;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:900;margin:0 0 8px;">03</p>
+                  <h2 align="center" class="section-title" style="color:#111111;font-family:Arial,Helvetica,sans-serif;font-size:36px;font-weight:900;line-height:38px;margin:0;">Tech <span class="red">Accessories</span></h2>
+                  <p align="center" style="color:#555555;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;margin:14px auto 28px;max-width:440px;">Modern accessories designed to simplify your day and showcase your brand in style.</p>
 
-        <section class="email-benefits">
-          <div>
-            <img src="assets/img/icons/clock.svg" alt="" />
-            <strong>Fast Turnaround</strong>
-          </div>
-          <div>
-            <img src="assets/img/icons/award.svg" alt="" />
-            <strong>Premium Quality</strong>
-          </div>
-          <div>
-            <img src="assets/img/icons/pencil.svg" alt="" />
-            <strong>Custom Branding</strong>
-          </div>
-        </section>
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="product-col" width="33.33%" style="padding-right:8px;">
+                        <table role="presentation" class="product-card" width="100%" cellspacing="0" cellpadding="0" border="0" style="border:1px solid #dddddd;border-radius:8px;">
+                          <tr>
+                            <td align="center" style="padding:18px 12px 22px;">
+                              <img src="assets/img/transperent-img/bottle-img.png" width="128" alt="Insulated tumbler" style="height:128px;object-fit:contain;width:128px;" />
+                              <h3 style="color:#111111;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:900;margin:14px 0 8px;">Insulated Tumbler</h3>
+                              <p style="color:#555555;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;margin:0 0 16px;">Keeps drinks hot or cold for hours on the go.</p>
+                              <a class="btn" href="#" style="line-height:42px;min-width:128px;">Shop Now &rarr;</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td class="product-col" width="33.33%" style="padding-left:4px;padding-right:4px;">
+                        <table role="presentation" class="product-card" width="100%" cellspacing="0" cellpadding="0" border="0" style="border:1px solid #dddddd;border-radius:8px;">
+                          <tr>
+                            <td align="center" style="padding:18px 12px 22px;">
+                              <img src="assets/img/transperent-img/headset-img.png" width="128" alt="Wireless headphones" style="height:128px;object-fit:contain;width:128px;" />
+                              <h3 style="color:#111111;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:900;margin:14px 0 8px;">Wireless Headphones</h3>
+                              <p style="color:#555555;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;margin:0 0 16px;">Premium sound with all-day comfort.</p>
+                              <a class="btn" href="#" style="line-height:42px;min-width:128px;">Shop Now &rarr;</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td class="product-col" width="33.33%" style="padding-left:8px;">
+                        <table role="presentation" class="product-card" width="100%" cellspacing="0" cellpadding="0" border="0" style="border:1px solid #dddddd;border-radius:8px;">
+                          <tr>
+                            <td align="center" style="padding:18px 12px 22px;">
+                              <img src="assets/img/transperent-img/bag-img.png" width="128" alt="Tech backpack" style="height:128px;object-fit:contain;width:128px;" />
+                              <h3 style="color:#111111;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:900;margin:14px 0 8px;">Tech Backpack</h3>
+                              <p style="color:#555555;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;margin:0 0 16px;">Smart storage for your everyday essentials.</p>
+                              <a class="btn" href="#" style="line-height:42px;min-width:128px;">Shop Now &rarr;</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
 
-        <footer class="email-footer">
-          <img src="assets/img/logo.png" alt="Ceek Branding" />
-          <p>Ready to elevate your brand?</p>
-          <a class="btn btn-red" href="#">Let's Create Something Great <span>&rarr;</span></a>
-        </footer>
-      </section>
-    </main>
+              <tr>
+                <td style="background:#050505;padding:24px 18px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="benefit-col" width="20%" align="center" style="border-right:1px solid #555555;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;line-height:16px;text-transform:uppercase;">Quality You<br />Can Trust</td>
+                      <td class="benefit-col" width="20%" align="center" style="border-right:1px solid #555555;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;line-height:16px;text-transform:uppercase;">Designed to<br />Represent</td>
+                      <td class="benefit-col" width="20%" align="center" style="border-right:1px solid #555555;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;line-height:16px;text-transform:uppercase;">Perfect for<br />Every Occasion</td>
+                      <td class="benefit-col" width="20%" align="center" style="border-right:1px solid #555555;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;line-height:16px;text-transform:uppercase;">On Time,<br />Every Time</td>
+                      <td class="benefit-col benefit-last" width="20%" align="center" style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;line-height:16px;text-transform:uppercase;">Made for<br />Your Brand</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="mobile-pad" style="background:#ffffff;padding:34px 28px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="benefit-col" width="20%" align="center" style="font-family:Arial,Helvetica,sans-serif;padding:0 8px;">
+                        <img src="assets/img/icons/clock.svg" width="42" alt="" style="margin:0 auto 10px;" />
+                        <strong style="display:block;font-size:11px;text-transform:uppercase;">Fast Turnaround</strong>
+                      </td>
+                      <td class="benefit-col" width="20%" align="center" style="font-family:Arial,Helvetica,sans-serif;padding:0 8px;">
+                        <img src="assets/img/icons/award.svg" width="42" alt="" style="margin:0 auto 10px;" />
+                        <strong style="display:block;font-size:11px;text-transform:uppercase;">Premium Quality</strong>
+                      </td>
+                      <td class="benefit-col" width="20%" align="center" style="font-family:Arial,Helvetica,sans-serif;padding:0 8px;">
+                        <img src="assets/img/icons/pencil.svg" width="42" alt="" style="margin:0 auto 10px;" />
+                        <strong style="display:block;font-size:11px;text-transform:uppercase;">Custom Branding</strong>
+                      </td>
+                      <td class="benefit-col" width="20%" align="center" style="font-family:Arial,Helvetica,sans-serif;padding:0 8px;">
+                        <img src="assets/img/icons/package.svg" width="42" alt="" style="margin:0 auto 10px;" />
+                        <strong style="display:block;font-size:11px;text-transform:uppercase;">Any Event</strong>
+                      </td>
+                      <td class="benefit-col benefit-last" width="20%" align="center" style="font-family:Arial,Helvetica,sans-serif;padding:0 8px;">
+                        <img src="assets/img/icons/headset.svg" width="42" alt="" style="margin:0 auto 10px;" />
+                        <strong style="display:block;font-size:11px;text-transform:uppercase;">Support</strong>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="mobile-pad" style="background:#050505;padding:32px 28px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td align="center">
+                        <img src="assets/img/logo.png" width="190" alt="Ceek Branding" style="margin:0 auto 16px;" />
+                        <p style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:800;margin:0 0 20px;text-transform:uppercase;">Ready to Elevate Your Brand?</p>
+                        <a class="btn" href="#" style="min-width: 260px;">Let's Create Something Great &rarr;</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
   </body>
 </html>
