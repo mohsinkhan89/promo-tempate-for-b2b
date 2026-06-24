@@ -13,6 +13,36 @@ document.querySelectorAll(".main-nav a").forEach((link) => {
   });
 });
 
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const targetId = link.getAttribute("href");
+
+    if (!targetId || targetId === "#") {
+      return;
+    }
+
+    const target = document.querySelector(targetId);
+
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    header?.classList.remove("nav-open");
+
+    const headerHeight = header?.offsetHeight ?? 0;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY;
+    const scrollTop = Math.max(targetTop - headerHeight, 0);
+
+    window.scrollTo({
+      top: scrollTop,
+      behavior: "smooth",
+    });
+
+    window.history.pushState(null, "", targetId);
+  });
+});
+
 const revealItems = document.querySelectorAll(
   ".hero-copy, .hero-visual, .kit-photo, .section-copy, .giveaway-copy, .giveaway-visual, .product-card, .features article"
 );

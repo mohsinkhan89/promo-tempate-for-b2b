@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--black);
+  background: #eeeeee;
   color: var(--ink);
   font-family: "Inter", Arial, sans-serif;
   overflow-x: hidden;
@@ -52,25 +52,34 @@ a {
   z-index: 20;
 }
 
+.site-header,
+main > section,
+.trust-bar,
+.site-footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  overflow: hidden;
+  width: 100%;
+}
+
 .brand {
-  align-items: flex-end;
-  color: var(--red);
+  align-items: center;
   display: inline-flex;
-  font-weight: 900;
-  gap: 6px;
-  line-height: 0.8;
 }
 
-.brand span {
-  font-size: 48px;
-  letter-spacing: 0;
-}
-
-.brand small {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 2px;
+.brand img {
+  display: block;
+  height: auto;
+  object-fit: contain;
+  width: 250px;
 }
 
 .main-nav {
@@ -181,7 +190,7 @@ a {
   grid-template-columns: minmax(430px, 0.74fr) minmax(650px, 1.26fr);
   min-height: 680px;
   overflow: hidden;
-  padding: 68px 47px 24px;
+  padding: 68px 56px 24px;
 }
 
 .hero-copy {
@@ -513,7 +522,7 @@ a {
   grid-template-columns: 1fr 1fr;
   min-height: 520px;
   overflow: hidden;
-  padding: 48px 55px;
+  padding: 48px 60px;
 }
 
 .kit-photo {
@@ -679,7 +688,7 @@ a {
   grid-template-columns: minmax(330px, 0.72fr) minmax(520px, 1.28fr);
   min-height: 575px;
   overflow: hidden;
-  padding: 70px 50px 42px;
+  padding: 70px 60px 42px;
 }
 
 .giveaway-copy {
@@ -751,7 +760,7 @@ a {
 
 .products {
   overflow: hidden;
-  padding: 62px 48px 70px;
+  padding: 62px 60px 70px;
 }
 
 .dot-products {
@@ -953,12 +962,8 @@ a {
   border-right: 0;
 }
 
-.footer-brand span {
-  font-size: 42px;
-}
-
-.footer-brand small {
-  font-size: 17px;
+.footer-brand img {
+  width: 220px;
 }
 
 .footer-main h3 {
@@ -1084,14 +1089,14 @@ a {
 
 .hero-logo-bottle {
   font-size: 21px;
-  left: 22.3%;
-  top: 60.6%;
+  left: 28.3%;
+  top: 67.6%;
 }
 
 .hero-logo-headphones {
   font-size: 17px;
-  right: 6.8%;
-  top: 65.6%;
+  right: 17.8%;
+  top: 73.6%;
 }
 
 .kit-photo {
@@ -1118,20 +1123,20 @@ a {
 
 .event-logo-bag {
   font-size: 22px;
-  left: 44.4%;
-  top: 30.8%;
+  left: 56.4%;
+  top: 20.8%;
 }
 
 .event-logo-bottle {
   font-size: 19px;
-  left: 22.6%;
-  top: 53.5%;
+  left: 34.6%;
+  top: 54.5%;
 }
 
 .event-logo-headphones {
   font-size: 15px;
-  right: 13.2%;
-  top: 67%;
+  right: 14.2%;
+  top: 69%;
 }
 
 @media (max-width: 1050px) {
@@ -1197,12 +1202,8 @@ a {
     position: relative;
   }
 
-  .brand span {
-    font-size: 38px;
-  }
-
-  .brand small {
-    font-size: 16px;
+  .brand img {
+    width: 205px;
   }
 
   .nav-toggle {
