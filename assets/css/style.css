@@ -1397,3 +1397,851 @@ main {
     min-width: 100%;
   }
 }
+
+@media (max-width: 900px) {
+  body {
+    background: #050505;
+  }
+
+  .site-header {
+    gap: 14px;
+    min-height: 76px;
+    padding: 14px 18px;
+    position: sticky;
+  }
+
+  .brand img {
+    width: min(190px, 58vw);
+  }
+
+  .nav-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    display: block;
+    flex: 0 0 42px;
+    margin-left: auto;
+  }
+
+  .main-nav {
+    background: #050505;
+    border-bottom: 1px solid #303030;
+    border-top: 1px solid #303030;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    left: 0;
+    margin-left: 0;
+    padding: 10px 22px 18px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 30;
+  }
+
+  .site-header.nav-open .main-nav {
+    display: flex;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+    padding: 14px 0;
+  }
+
+  .account-btn {
+    display: none;
+  }
+
+  .hero,
+  .welcome,
+  .giveaways {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 0;
+    padding: 44px 22px 38px;
+  }
+
+  .hero-copy {
+    margin-top: 0;
+    max-width: none;
+  }
+
+  .eyebrow {
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 12vw, 58px);
+    line-height: 1.02;
+  }
+
+  .hero h2 {
+    font-size: clamp(23px, 7vw, 33px);
+    line-height: 1.08;
+  }
+
+  .hero-copy > p:not(.eyebrow),
+  .giveaway-copy p,
+  .section-copy p,
+  .section-heading p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .button-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .btn {
+    min-height: 52px;
+    width: 100%;
+  }
+
+  .hero-points {
+    gap: 18px 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 34px;
+    max-width: 100%;
+  }
+
+  .hero-points div {
+    border-right: 0;
+    min-height: 78px;
+  }
+
+  .banner-visual,
+  .hero-banner,
+  .event-banner {
+    margin: 28px 0 0;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .hero-banner > img,
+  .event-banner > img {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .banner-logo {
+    transform: scale(0.72);
+    transform-origin: left top;
+  }
+
+  .hero-logo-bag {
+    left: 49%;
+    top: 29%;
+  }
+
+  .hero-logo-bottle {
+    left: 22%;
+    top: 60%;
+  }
+
+  .hero-logo-headphones {
+    right: 5%;
+    top: 65%;
+    transform-origin: right top;
+  }
+
+  .welcome {
+    gap: 30px;
+    padding: 38px 22px;
+  }
+
+  .kit-photo {
+    aspect-ratio: 1.18 / 0.88;
+    max-width: 100%;
+    min-height: 0;
+    order: 1;
+  }
+
+  .section-copy {
+    max-width: none;
+    order: 2;
+  }
+
+  .section-copy h2,
+  .giveaway-copy h2,
+  .section-heading h2 {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+
+  .giveaways {
+    gap: 24px;
+    min-height: 0;
+    padding: 48px 22px 36px;
+  }
+
+  .giveaway-copy {
+    max-width: none;
+  }
+
+  .event-banner {
+    margin-top: 0;
+  }
+
+  .event-logo-bag {
+    left: 44%;
+    top: 31%;
+  }
+
+  .event-logo-bottle {
+    left: 22%;
+    top: 54%;
+  }
+
+  .event-logo-headphones {
+    right: 12%;
+    top: 67%;
+    transform-origin: right top;
+  }
+
+  .products {
+    padding: 44px 22px 50px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    min-height: 0;
+    padding: 22px 18px 26px;
+  }
+
+  .product-card img {
+    height: 210px;
+  }
+
+  .trust-bar {
+    gap: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 22px;
+  }
+
+  .trust-bar span {
+    border-bottom: 1px solid #333;
+    border-right: 0;
+    padding: 18px 0;
+  }
+
+  .trust-bar span:last-child {
+    border-bottom: 0;
+  }
+
+  .trust-bar span:nth-child(odd):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .features {
+    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 40px 22px;
+  }
+
+  .features article:nth-child(odd):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .features p {
+    max-width: 280px;
+  }
+
+  .site-footer {
+    padding: 32px 22px 0;
+  }
+
+  .footer-main {
+    gap: 26px;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main > div {
+    border-bottom: 1px solid #333;
+    border-right: 0;
+    min-height: 0;
+    padding: 0 0 24px;
+  }
+
+  .footer-main > div:last-child {
+    border-bottom: 0;
+  }
+
+  .footer-brand img {
+    width: 190px;
+  }
+
+  .socials {
+    gap: 14px;
+  }
+
+  .footer-cta {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .brand img {
+    width: min(170px, 56vw);
+  }
+
+  .hero,
+  .welcome,
+  .giveaways,
+  .products,
+  .features,
+  .site-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero h1 {
+    font-size: 37px;
+  }
+
+  .hero h2 {
+    font-size: 23px;
+  }
+
+  .hero-points {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-bar,
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .banner-logo {
+    transform: scale(0.58);
+  }
+
+  .number-badge {
+    height: 58px;
+    width: 51px;
+  }
+
+  .product-card img {
+    height: 190px;
+  }
+}
+
+.email-page {
+  background: #eeeeee;
+  color: var(--ink);
+}
+
+.email-shell {
+  padding: 34px 16px;
+}
+
+.email-template {
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+  margin: 0 auto;
+  max-width: 760px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.email-header,
+.email-footer {
+  background: #050505;
+  color: #ffffff;
+}
+
+.email-header {
+  align-items: center;
+  border-bottom: 1px solid #333333;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 26px;
+}
+
+.email-header img,
+.email-footer img {
+  display: block;
+  width: 210px;
+}
+
+.email-header a {
+  background: var(--red);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 13px 18px;
+  text-transform: uppercase;
+}
+
+.email-hero,
+.email-event {
+  background:
+    radial-gradient(circle at 75% 30%, rgba(241, 6, 13, 0.2), transparent 26%),
+    #030303;
+  color: #ffffff;
+}
+
+.email-hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  padding: 36px 28px 26px;
+}
+
+.email-hero-copy {
+  align-self: center;
+  position: relative;
+  z-index: 2;
+}
+
+.email-hero h1 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.02;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.email-hero p:not(.eyebrow) {
+  color: #d8d8d8;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 18px 0 22px;
+}
+
+.email-hero-img {
+  align-self: center;
+  overflow: hidden;
+}
+
+.email-hero-img img {
+  display: block;
+  margin-left: -28px;
+  width: 470px;
+}
+
+.email-kit {
+  align-items: center;
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 1fr 0.9fr;
+  padding: 34px 30px;
+}
+
+.email-kit > img {
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.email-kit h2,
+.email-event h2,
+.email-products h2 {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.03;
+  margin: 0;
+}
+
+.email-kit h2 span,
+.email-event h2 span,
+.email-products h2 span {
+  color: var(--red);
+  display: block;
+}
+
+.email-kit p,
+.email-event p {
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 18px 0 24px;
+}
+
+.email-event {
+  align-items: center;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 0.72fr 1.28fr;
+  padding: 36px 30px;
+}
+
+.email-event p {
+  color: #d7d7d7;
+}
+
+.email-event img {
+  display: block;
+  margin-right: -80px;
+  width: 520px;
+}
+
+.email-products {
+  padding: 36px 30px 42px;
+}
+
+.email-products .section-heading {
+  margin-bottom: 30px;
+}
+
+.email-product-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.email-product-grid article {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 18px 12px 20px;
+  text-align: center;
+}
+
+.email-product-grid img {
+  height: 135px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.email-product-grid h3 {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 12px 0 8px;
+}
+
+.email-product-grid p {
+  color: #555555;
+  font-size: 12px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.email-benefits {
+  background: #050505;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.email-benefits div {
+  border-right: 1px solid #555555;
+}
+
+.email-benefits div:last-child {
+  border-right: 0;
+}
+
+.email-benefits img {
+  height: 42px;
+  margin: 0 auto 10px;
+  width: 42px;
+}
+
+.email-benefits strong {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.email-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 30px 24px 34px;
+  text-align: center;
+}
+
+.email-footer p {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.email-footer .btn {
+  min-height: 46px;
+}
+
+@media (max-width: 700px) {
+  .email-shell {
+    padding: 0;
+  }
+
+  .email-template {
+    box-shadow: none;
+  }
+
+  .email-header {
+    gap: 16px;
+    padding: 18px 16px;
+  }
+
+  .email-header img,
+  .email-footer img {
+    width: 170px;
+  }
+
+  .email-header a {
+    padding: 11px 12px;
+  }
+
+  .email-hero,
+  .email-kit,
+  .email-event,
+  .email-product-grid,
+  .email-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .email-hero {
+    padding: 34px 18px 20px;
+  }
+
+  .email-hero h1 {
+    font-size: 36px;
+  }
+
+  .email-hero-img img,
+  .email-event img {
+    margin: 16px 0 0;
+    width: 100%;
+  }
+
+  .email-kit,
+  .email-event,
+  .email-products {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .email-event {
+    gap: 10px;
+  }
+
+  .email-benefits div {
+    border-bottom: 1px solid #333333;
+    border-right: 0;
+    padding: 16px 0;
+  }
+
+  .email-benefits div:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .email-page {
+    background: #ffffff;
+  }
+
+  .email-template {
+    max-width: 100%;
+  }
+
+  .email-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .email-header img,
+  .email-footer img {
+    width: min(190px, 72vw);
+  }
+
+  .email-header a {
+    display: inline-flex;
+    justify-content: center;
+    min-height: 42px;
+    width: 100%;
+  }
+
+  .email-hero {
+    padding: 30px 16px 18px;
+  }
+
+  .email-hero h1 {
+    font-size: clamp(32px, 10vw, 42px);
+  }
+
+  .email-hero p:not(.eyebrow) {
+    font-size: 15px;
+  }
+
+  .email-hero .btn,
+  .email-kit .btn,
+  .email-footer .btn {
+    min-height: 50px;
+    width: 100%;
+  }
+
+  .email-hero-img {
+    border-radius: 0;
+    margin-top: 18px;
+  }
+
+  .email-hero-img img {
+    border-radius: 0;
+  }
+
+  .email-kit {
+    gap: 22px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .email-kit > img {
+    aspect-ratio: 1.15 / 0.88;
+    object-fit: cover;
+  }
+
+  .email-kit h2,
+  .email-event h2,
+  .email-products h2 {
+    font-size: clamp(30px, 9vw, 38px);
+  }
+
+  .email-event {
+    padding-bottom: 24px;
+    padding-top: 32px;
+  }
+
+  .email-event img {
+    border-radius: 0;
+  }
+
+  .email-products {
+    padding-bottom: 34px;
+    padding-top: 32px;
+  }
+
+  .email-products .section-heading {
+    margin-bottom: 22px;
+  }
+
+  .email-product-grid {
+    gap: 14px;
+  }
+
+  .email-product-grid article {
+    align-items: center;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 112px 1fr;
+    min-height: 136px;
+    padding: 14px;
+    text-align: left;
+  }
+
+  .email-product-grid img {
+    height: 106px;
+  }
+
+  .email-product-grid h3 {
+    font-size: 17px;
+    margin: 0 0 6px;
+  }
+
+  .email-product-grid p {
+    font-size: 13px;
+  }
+
+  .email-benefits {
+    padding: 10px 20px;
+  }
+
+  .email-benefits div {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .email-benefits img {
+    flex: 0 0 40px;
+    margin: 0;
+  }
+
+  .email-footer {
+    padding: 28px 18px 32px;
+  }
+
+  .email-footer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .email-header,
+  .email-hero,
+  .email-kit,
+  .email-event,
+  .email-products,
+  .email-footer {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .email-header img,
+  .email-footer img {
+    width: min(168px, 68vw);
+  }
+
+  .email-hero h1 {
+    font-size: 31px;
+  }
+
+  .email-hero-img img,
+  .email-event img {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .email-product-grid article {
+    grid-template-columns: 96px 1fr;
+    padding: 12px;
+  }
+
+  .email-product-grid img {
+    height: 92px;
+  }
+
+  .email-product-grid h3 {
+    font-size: 15px;
+  }
+
+  .email-product-grid p {
+    font-size: 12px;
+  }
+
+  .email-benefits {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .email-benefits strong {
+    font-size: 11px;
+  }
+}
